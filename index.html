@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <section>
+        <div class="contact-form">
+            <form>
+                <h1>Contact Us</h1>
+                <div class="form-group">
+                    <div>
+                        <label for="first-name">First Name *</label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
+                    <div>
+                        <label for="last-name">Last Name *</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </div>
+                </div>
+                <label for="email">E-mail Address *</label>
+                <input type="email" id="email" name="email">
+                <div class="query-type-group">
+                    <label for="query-type">Query Type *</label>
+                    <div>
+                        <fieldset>
+                            <input type="radio" id="general-enquiry" name="inquiry-type" value="general-enquiry">
+                            <label class="radio-distance" for="general-enquiry">General Enquiry</label>
+                        </fieldset>
+                        <fieldset>
+                            <input type="radio" id="support-request" name="inquiry-type" value="support-request">
+                            <label class="radio-distance" for="support-request">Support Request</label>
+                        </fieldset>
+                    </div>
+                </div>
+                <label for="message">Message *</label>
+                <textarea id="message" name="message"></textarea>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="consent" name="consent">
+                    <label for="consent">I consent to being contacted by the team</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://www.frontendmentor.io/profile/CaioQuerino" target="_blank">Caio Querino</a>.
+        </div>
+      </footer>
+</body>
+</html>
