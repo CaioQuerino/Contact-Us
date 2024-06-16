@@ -189,11 +189,6 @@ button:hover {
     accent-color: hsl(171, 83%, 14%);
 }
 
-footer{
-    background-color:hsl(234, 89%, 64%);
-    width: 100%;
-}
-.attribution { font-size: 11px; text-align: center; text-decoration: none;}
 
 
 @media (max-width: 395px) {
