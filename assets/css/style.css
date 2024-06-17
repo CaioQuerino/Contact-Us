@@ -20,6 +20,11 @@
     --corInputs: hsla(0, 0%, 0%, 50%);
     --corDestaqueHover: hsl(145, 38%, 91%);
     --font: 'Karla', 'sans-serif';
+    --corErro: hsl(0, 66%, 54%);
+}
+
+p{
+    color: var(--corErro);;
 }
 
 body {
