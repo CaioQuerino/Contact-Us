@@ -31,6 +31,7 @@ body {
     background-color: var(--corFundo);
     font: normal 400 16px var(--font);
     display: grid;
+    height: 100vh;
 }
 
 h1{
@@ -43,7 +44,6 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 form {
