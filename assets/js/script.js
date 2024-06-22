@@ -28,7 +28,7 @@ function validar_dados(first_name, last_name, email, inquiry_type, message, cons
     }
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        document.getElementById('message_erro_email').innerHTML = 'Email invalido';
+        document.getElementById('message_erro_email').innerHTML = 'invalid email';
       }
       else{
         document.getElementById('message_erro_email').innerHTML = '';
