@@ -13,7 +13,7 @@ function validar_dados(first_name, last_name, email, inquiry_type, message, cons
         document.getElementById('message_erro_message').innerHTML = 'This field is required';
         valid = false;
     } 
-    else if (message !== "") {
+    else  {
         document.getElementById('message_erro_message').innerHTML = '';
     
         localStorage.setItem("message", message);
@@ -23,25 +23,22 @@ function validar_dados(first_name, last_name, email, inquiry_type, message, cons
         document.getElementById('message-erro-query-type').innerHTML = 'Tipo de consulta obrigatório';
         valid = false;
     } 
-    else if (inquiry_type !== "") {
+    else  {
         document.getElementById('message-erro-query-type').innerHTML = '';
     }
-    
-    if (email === "") {
-        document.getElementById('message_erro_email').innerHTML = 'Pleace enter a valid email address';
-        valid = false;
-    } 
-    else if (email !== "") {
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        document.getElementById('message_erro_email').innerHTML = 'Email invalido';
+      }
+      else{
         document.getElementById('message_erro_email').innerHTML = '';
-    
-        localStorage.setItem("email", email);
-    }
+      }
     
     if (last_name === "") {
         document.getElementById('message_erro_last_name').innerHTML = 'This field is required';
         valid = false;
     } 
-    else if (last_name !== "") {
+    else  {
         document.getElementById('message_erro_last_name').innerHTML = '';
     
         localStorage.setItem("last_name", last_name);
@@ -51,7 +48,7 @@ function validar_dados(first_name, last_name, email, inquiry_type, message, cons
         document.getElementById('message_erro_first_name').innerHTML = 'This field is required';
         valid = false;
     } 
-    else if (first_name !== "") {
+    else  {
         document.getElementById('message_erro_first_name').innerHTML = '';
     
         localStorage.setItem("first_name", first_name);
@@ -71,3 +68,10 @@ function coletar() {
 
 }
 
+
+
+const validateEmail = (event) => {
+let input = event.target;
+let email = input.value;
+let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+};
