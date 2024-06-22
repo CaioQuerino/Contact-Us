@@ -31,7 +31,6 @@ body {
     background-color: var(--corFundo);
     font: normal 400 16px var(--font);
     display: grid;
-    align-items: center;
 }
 
 h1{
@@ -40,11 +39,11 @@ h1{
 }
 
 section{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 form {
@@ -217,7 +216,7 @@ button:hover {
     }
 
     .contact-form {
-        display: flex;
+        display: grid;
         gap: 1em;
         flex-wrap: wrap;
     }
