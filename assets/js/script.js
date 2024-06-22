@@ -20,7 +20,7 @@ function validar_dados(first_name, last_name, email, inquiry_type, message, cons
     }
     
     if (inquiry_type === null) {
-        document.getElementById('message-erro-query-type').innerHTML = 'Tipo de consulta obrigatório';
+        document.getElementById('message-erro-query-type').innerHTML = 'mandatory query type';
         valid = false;
     } 
     else  {
