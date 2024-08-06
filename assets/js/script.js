@@ -1,4 +1,4 @@
-function validar_dados(first_name, last_name, email, inquiry_type, message, consent){
+const validar_dados = (first_name, last_name, email, inquiry_type, message, consent) => {
     let valid = true;
 
     if (!consent) {

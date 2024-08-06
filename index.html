@@ -16,28 +16,28 @@
                 <div class="form-group">
                     <div>
                         <label for="first-name">First Name *</label>
-                        <input type="text" id="first-name" name="first-name">
+                        <input onclick="coletar()" type="text" id="first-name" name="first-name">
                         <p id="message_erro_first_name" style="color: hsl(0, 66%, 54%);"></p>
                     
                     </div>
                     <div>
                         <label for="last-name">Last Name *</label>
-                        <input type="text" id="last-name" name="last-name">
+                        <input onclick="coletar()" type="text" id="last-name" name="last-name">
                         <p id="message_erro_last_name" style="color: hsl(0, 66%, 54%);"></p>
                     </div>
                 </div>
                 <label for="email">E-mail Address *</label>
-                <input type="email" id="email" name="email">
+                <input onclick="coletar()" type="email" id="email" name="email">
                 <p id="message_erro_email" style="color: hsl(0, 66%, 54%);"></p>
                 <div class="query-type-group">
                     <label for="query-type">Query Type *</label>
                     <div>
                         <fieldset>
-                            <input type="radio" id="general-enquiry" name="inquiry-type" value="general-enquiry">
+                            <input onclick="coletar()" type="radio" id="general-enquiry" name="inquiry-type" value="general-enquiry">
                             <label class="radio-distance" for="general-enquiry">General Enquiry</label>
                         </fieldset>
                         <fieldset>
-                            <input type="radio" id="support-request" name="inquiry-type" value="support-request">
+                            <input onclick="coletar()" type="radio" id="support-request" name="inquiry-type" value="support-request">
                             <label class="radio-distance" for="support-request">Support Request</label>
                         </fieldset>
                     </div>
@@ -50,7 +50,7 @@
                 <p id="message_erro_message" style="color: hsl(0, 66%, 54%);"></p>
                 
                 <div class="checkbox-group">
-                    <input type="checkbox" id="consent" name="consent">
+                    <input onclick="coletar()" type="checkbox" id="consent" name="consent">
                     <label for="consent">I consent to being contacted by the team</label>
                 </div>
                 <p id="message-erro-consent" style="color: hsl(0, 66%, 54%);"></p>
